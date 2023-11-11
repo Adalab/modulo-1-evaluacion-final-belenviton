@@ -1,0 +1,10 @@
+@mixin arrow_button {
+  background-color: $primary_color;
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+}
