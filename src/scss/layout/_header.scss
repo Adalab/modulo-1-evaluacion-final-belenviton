@@ -56,15 +56,15 @@
     text-align: center;
     margin-top: 1rem;
   }
-  .arrow-button {
+  .arrow-down-button {
     margin-top: 4.5rem;
     @include arrow_button();
   }
 
-  .arrow {
+  .arrow-down {
     width: 2rem;
     height: 1.17rem;
     z-index: 3;
-    align-self: center;
+    object-fit: contain;
   }
 }
