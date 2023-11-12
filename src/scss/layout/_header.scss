@@ -7,10 +7,16 @@
     display: flex;
     justify-content: center;
     overflow-x: hidden;
+    background-image: linear-gradient(
+      $primary_color,
+      transparent 40%,
+      rgb(22, 22, 22)
+    );
   }
   .img-city {
     width: 300vh;
     height: 100vh;
+    z-index: -1;
   }
   .back-burguer {
     background-color: #0271bc;
