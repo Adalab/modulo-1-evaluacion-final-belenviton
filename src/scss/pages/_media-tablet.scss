@@ -1,0 +1,129 @@
+@media (min-width: 768px) {
+  /* header */
+  .hero-article {
+    margin: 38.4rem auto 4.5rem;
+    .header-title {
+      width: 69rem;
+      height: 21.2rem;
+      font-size: 8rem;
+      line-height: 1.33;
+    }
+    .header-subtitle {
+      width: 36rem;
+      height: 3.2rem;
+      margin-top: 2rem;
+      font-size: 2.4rem;
+    }
+    .arrow-down-button {
+      margin-top: 3rem;
+    }
+  }
+
+  /* main */
+  .principal-main {
+    width: 76.8rem;
+    height: 33rem;
+    margin: auto;
+    padding: 3rem 3.9rem 6rem;
+
+    .tip-main {
+      width: 69rem;
+    }
+    .principal-title {
+      width: 69rem;
+      height: 4.5rem;
+      font-size: 2.6rem;
+      line-height: 1.73;
+    }
+    .principal-tip {
+      width: 69rem;
+      height: 6rem;
+      margin: 3rem 0;
+      font-size: 2rem;
+      line-height: 1.5;
+    }
+    .go-button {
+      width: 9.1rem;
+    }
+  }
+  .secundary-main {
+    height: 39.7rem;
+    display: grid;
+    grid-template-columns: 25.6rem 25.6rem 25.6rem;
+    justify-content: center;
+
+    .secundary-title {
+      width: 45rem;
+      height: 4.5rem;
+      font-size: 2.6rem;
+      line-height: 1.73;
+      grid-column: span 3;
+      justify-self: center;
+    }
+    .first-article {
+      @include article_tablet;
+      .first-title {
+        @include title_tablet;
+      }
+      .first-tip {
+        @include tips_tablet;
+      }
+    }
+    .second-article {
+      @include article_tablet;
+      .second-title {
+        @include title_tablet;
+      }
+      .second-tip {
+        @include tips_tablet;
+      }
+    }
+    .third-article {
+      @include article_tablet;
+      .third-title {
+        @include title_tablet;
+      }
+      .third-tip {
+        @include tips_tablet;
+      }
+    }
+    .more-button {
+      width: 21rem;
+      margin: 6rem auto 0rem;
+      grid-column: span 3;
+      justify-self: center;
+    }
+  }
+
+  /* footer */
+  .footer {
+    .footer-container {
+      width: 76.8rem;
+      height: 24rem;
+      padding: 4.5rem 3.9rem;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      .footer-ul {
+        @include list_tablet();
+      }
+      .list-rrss {
+        @include list_tablet();
+      }
+      .footer-logo {
+        align-items: flex-start;
+        justify-content: flex-start;
+        order: -1;
+        @include list_tablet();
+        .copy-year {
+          text-align: left;
+        }
+        .footer-motto {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

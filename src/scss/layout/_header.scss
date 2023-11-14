@@ -38,26 +38,29 @@
   }
 }
 .hero-article {
-  margin: 28.4rem 0 6.2rem;
+  margin: 28.4rem auto 5.3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 2;
   position: absolute;
   .header-title {
+    width: 29rem;
+    height: 11rem;
     font-family: $font_title;
     font-weight: bold;
     font-size: 4.2rem;
-    width: 29rem;
+    text-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+    line-height: 1.31;
     text-align: center;
     color: $primary_color;
     text-transform: $capital;
   }
   .header-subtitle {
-    color: $primary_color;
-    font-size: 1.6rem;
     width: 29rem;
     height: 2.1rem;
+    color: $primary_color;
+    font-size: 1.6rem;
     text-align: center;
     margin-top: 1rem;
   }

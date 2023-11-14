@@ -1,8 +1,8 @@
-@mixin articles_main {
+@mixin articles_mobile {
   display: grid;
   justify-content: center;
 }
-@mixin title_main {
+@mixin title_mobile {
   width: 18.4rem;
   height: 3rem;
   margin-top: 4.5rem;
@@ -12,11 +12,37 @@
   color: $html-color;
   text-align: center;
 }
-@mixin tips_main {
+@mixin tips_mobile {
   width: 18rem;
   height: 6.3rem;
   font-size: 1.8rem;
   line-height: 1.67;
   text-align: center;
   color: $html-color;
+}
+@mixin article_tablet {
+  width: 21.23rem;
+  margin: auto;
+}
+@mixin title_tablet {
+  width: 21.23rem;
+  font-size: 2.4rem;
+  line-height: 1.25;
+}
+@mixin tips_tablet {
+  width: 21.23rem;
+  height: 6.8rem;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-top: 1.4rem;
+}
+@mixin article_desktop {
+  width: 35rem;
+}
+@mixin title_desktop {
+  width: 35rem;
+}
+@mixin tips_desktop {
+  width: 35rem;
+  height: 6.8rem;
 }

@@ -7,5 +7,13 @@
 }
 @mixin links {
   text-decoration: none;
+
   color: $primary_color;
+}
+@mixin list_tablet {
+  width: 21rem;
+  height: 15rem;
+  text-align: left;
+  padding-left: 3rem;
+  margin: 0;
 }

@@ -1,10 +1,14 @@
 .principal-main {
+  height: 37.6rem;
+  margin: auto;
+  padding: 3rem 1.5rem 4.5rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 3rem auto 4.5rem;
-  width: 29rem;
+  align-items: center;
+  background-color: $primary_color;
+
   .tip-main {
+    width: 29rem;
     height: 3rem;
     text-align: start;
     font-size: 1.4rem;
@@ -13,6 +17,7 @@
   }
 
   .principal-title {
+    width: 29rem;
     height: 6rem;
     font-size: 2.4rem;
     font-family: $font_title;
@@ -23,7 +28,8 @@
     color: $html-color;
   }
   .principal-tip {
-    height: 15rem;
+    width: 29rem;
+    height: 12rem;
     margin: 1.5rem 0 3rem;
     font-size: 1.8rem;
     line-height: 1.67;
@@ -60,38 +66,38 @@
     color: $html-color;
   }
   .first-article {
-    @include articles_main();
+    @include articles_mobile();
     .first-title {
-      @include title_main();
+      @include title_mobile();
     }
     .first-tip {
-      @include tips_main();
+      @include tips_mobile();
     }
   }
   .second-article {
-    @include articles_main();
+    @include articles_mobile();
     .second-title {
-      @include title_main();
+      @include title_mobile();
     }
     .second-tip {
-      @include tips_main();
+      @include tips_mobile();
     }
   }
   .third-article {
-    @include articles_main();
+    @include articles_mobile();
     .third-title {
-      @include title_main();
+      @include title_mobile();
     }
     .third-tip {
-      @include tips_main();
+      @include tips_mobile();
     }
   }
 }
 .more-button {
-  margin: 4.5rem auto 0rem;
-  background-color: $buttons_color;
   width: 18.4rem;
   height: 4.5rem;
+  margin: 4.5rem auto 0rem;
+  background-color: $buttons_color;
   font-size: 2rem;
   font-weight: 500;
   line-height: 2.25;
