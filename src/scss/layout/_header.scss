@@ -19,10 +19,10 @@
     z-index: -1;
   }
   .back-burguer {
-    background-color: #0271bc;
-    display: flex;
     width: 4.4rem;
     height: 4.4rem;
+    background-color: #0271bc;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -67,12 +67,15 @@
   .arrow-down-button {
     margin-top: 4.5rem;
     @include arrow_button();
+    transition: 1s ease;
+    .arrow-down {
+      width: 2rem;
+      height: 1.17rem;
+      z-index: 3;
+      object-fit: contain;
+    }
   }
-
-  .arrow-down {
-    width: 2rem;
-    height: 1.17rem;
-    z-index: 3;
-    object-fit: contain;
+  .arrow-down-button:hover {
+    transform: scale(2);
   }
 }

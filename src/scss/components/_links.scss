@@ -1,13 +1,12 @@
 @mixin footer_list {
+  width: 15rem;
   text-align: center;
   text-transform: uppercase;
   font-size: 1.6rem;
-  width: 15rem;
   line-height: 1.88;
 }
 @mixin links {
   text-decoration: none;
-
   color: $primary_color;
 }
 @mixin list_tablet {
